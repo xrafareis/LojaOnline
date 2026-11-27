@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Configurações básicas da página e folha de estilos -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESTÁCIO GAMER</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Cabeçalho com logo, busca e acesso à conta -->
+<header class="topo">
+  <a href="index.html" class="logo"><img src="img/logo.jpg" alt="ESTÁCIO GAMER" width="200" height="100"></a>
+<!-- Campo para pesquisar produtos -->
+<div class="caixa-busca">
+  <input type='text' id='searchInput' class="busca" placeholder='Estou procurando por...'>
+  <button class="botao-buscar" onclick='searchProducts()'>Buscar</button>
+</div>
+<!-- Links de login, cadastro e carrinho -->
+<div class="conta">
+  <strong><a href="login.html" class="conta2">Entre</a> ou <a href="cadastro.html" class="conta2">Cadastre-se</a></strong>
+  <a href="carrinho.html" class="carrinho">🛒 Carrinho</a>
+</div>
+</header>
+<!-- Menu principal de categorias -->
+<nav class="menu">
+  <div class="menu-item">
+    <a href="#" data-categoria="">☰ TODOS OS DEPARTAMENTOS ▾</a>
+<!-- Submenu com as categorias disponíveis -->
+    <div class="submenu">
+      <a href="#" data-categoria="Controles">Controles</a>
+      <a href="#" data-categoria="Headset">Fones</a>
+      <a href="#" data-categoria="CPU">Gabinetes</a>
+      <a href="#" data-categoria="Monitor">Monitor</a>
+      <a href="#" data-categoria="Mouse">Mouse</a>
+      <a href="#" data-categoria="Mousepad">Mousepad</a>
+      <a href="#" data-categoria="Processador">Processador</a>
+      <a href="#" data-categoria="Suporte">Suporte</a>
+      <a href="#" data-categoria="Teclado">Teclado</a>
+      <a href="#" data-categoria="Webcam">Webcam</a>
+    </div>
+  </div>
+<!-- Menu com as categorias disponíveis -->
+  <a href="#" data-categoria="Processador">PROCESSADOR</a>
+  <a href="#" data-categoria="Monitor">MONITOR</a>
+  <a href="#" data-categoria="Mouse">MOUSE</a>
+  <a href="#" data-categoria="Teclado">TECLADO</a>
+  <a href="#" data-categoria="Headset">FONES</a>
+</nav>
+<!-- Banner promocional da loja -->
+<img src="img/banner.png" alt="Promoção Estácio Gamer">
+<!-- Área onde os produtos são carregados por JavaScript -->
+<main class="conteudo-principal" style="padding: 20px;">
+  <section id='productList'></section>
+</main>
+<!-- Rodapé da página -->
+<footer>
+<div class="footer-container">
+<!-- Identidade visual no rodapé -->
+<div class="footer-col">
+  <img src="img/logo2.jpg" alt="Logo da Loja" class="logo">
+</div>
+<!-- Links da central de ajuda -->
+<div class="footer-col">
+  <h4>Central de Ajuda</h4>
+    <ul>
+      <li><a href="contato.html">Fale Conosco</a></li>
+      <li><a href="rastreio.html"">Rastrear Pedido</a></li>
+      <li><a href="trocas_devolucoes.html">Trocas e Devoluções</a></li>
+      <li><a href="faq.html">Perguntas Frequentes (FAQ)</a></li>
+    </ul>
+</div>
+<!-- Redes sociais da loja -->
+<div class="footer-col">
+  <h4>Siga-nos</h4>
+    <br><br>
+  <a href="#"><img src="img/tiktok.svg" alt="TikTok"></a>
+  <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+  <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+  <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+</div>
+<!-- Formas de pagamento aceitas -->
+<div class="footer-col">
+  <h4>Formas de Pagamento</h4>
+    <p>Aceitamos as principais formas de pagamento:</p>
+    <br><img src="img/pagamentos.png" alt="Formas de Pagamento" width="300">
+</div>
+</div>
+<!-- Direitos autorais -->
+<div class="footer-bottom">
+  <p>&copy; 2026 Estácio Gamer - Todos os direitos reservados.</p>
+</div>
+</footer>
+<!-- Carrega os scripts gerais da página -->
+<script src='scripts.js'></script>
+</body>
+</html>
